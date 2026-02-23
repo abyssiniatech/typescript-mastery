@@ -1,15 +1,5 @@
-interface User {
-  id: number;
-  name: string;
-  active: boolean;
-}
-
-const user: User = {
-  id: 1,
-  name: "Surafel",
-  active: true
+const login = (email: string, password: string): boolean => {
+  return email.includes("@") && password.length > 6;
 };
-
-console.log(user.id)
-console.log(user.name)
-console.log(user.active)
+const val=login("suraf@mjhaj","1234788")
+console.log(val)

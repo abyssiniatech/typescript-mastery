@@ -1,11 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const user = {
-    id: 1,
-    name: "Surafel",
-    active: true
+const login = (email, password) => {
+    return email.includes("@") && password.length > 6;
 };
-console.log(user.id);
-console.log(user.name);
-console.log(user.active);
+const val = login("suraf@mjhaj", "1234788");
+console.log(val);
 //# sourceMappingURL=index.js.map
