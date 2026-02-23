@@ -97,3 +97,4 @@ enum colors{
 
 // 14 composite types 
 // const status:"active" | "close" | "pending"
+ 
