@@ -1,8 +1,16 @@
 "use strict";
+// union types in typescript
 Object.defineProperty(exports, "__esModule", { value: true });
-const login = (email, password) => {
-    return email.includes("@") && password.length > 6;
+const isAccess = (role) => {
+    if (role === "admin") {
+        console.log("you are admin");
+    }
+    else if (role === "user") {
+        console.log("you are user");
+    }
+    else {
+        console.log("you are guest");
+    }
 };
-const val = login("suraf@mjhaj", "1234788");
-console.log(val);
+isAccess("user");
 //# sourceMappingURL=index.js.map

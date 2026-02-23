@@ -1,5 +1,16 @@
-const login = (email: string, password: string): boolean => {
-  return email.includes("@") && password.length > 6;
-};
-const val=login("suraf@mjhaj","1234788")
-console.log(val)
+// union types in typescript
+
+type Role = "admin" | "user" | "guest";
+
+const isAccess=(role:Role)=>{
+  if(role==="admin"){
+   console.log("you are admin") 
+  }
+  else if(role==="user"){
+    console.log("you are user")
+  }
+  else{
+    console.log("you are guest")
+  }
+}
+isAccess("user")
